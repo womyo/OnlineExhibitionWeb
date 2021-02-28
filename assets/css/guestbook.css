@@ -1,0 +1,234 @@
+body{
+	background-image: url(../../images/bricks.jpg);
+	background-size: cover;
+}
+.menu{
+	list-style: none;
+	height: 90px;
+	/*padding: 5px 5px;*/
+	margin: 0;
+	background: rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.menu li{
+	float: left;
+	position: relative;
+	margin: 30px 20px 50px 50px;
+	padding: 0 30px;
+}
+.menu li a{
+	display: block;
+	font-family: 'Noto sans', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 7px 8px;
+	margin: 0;
+	color: rgba(255, 255, 255, 0.8);
+	margin: 0;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.menu li:hover >a{
+	color: white;
+}
+.menu .logo img{
+	border-radius: 100%;
+	display:block;
+	width: 50px;
+	height: 50px;
+	margin-top: -15px;
+	margin-left: 60px;
+}
+.menu .last{
+	margin-right: 110px;
+}
+#wrapper{
+	max-width: 50rem;
+	margin: 2rem auto;
+	display: block;
+}
+#header{
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+#header h1{
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;/*google fonts*/
+	color:rgba(0, 0, 0, 0.8);
+	/* line-height: 2.3rem; */
+}
+
+#main .show{
+	color:black;
+	margin: 0 auto;
+	width: 795px;
+	height: 400px;
+	margin-bottom: 50px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, 0.3);
+	padding-top: 5px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	font-size: 1.2rem;
+	font-family:'Times New Roman'
+}
+/* #main .name{
+	width: 30rem;
+} */
+
+
+#main .group 			  {
+  position:relative;
+  margin-bottom:20px;
+}
+#main .name 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+	background-color: transparent;
+}
+.name:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#000000;
+  font-size:18px;
+  font-weight:bold;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.name:focus ~ label, .name:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#000000;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; color: #000000;}
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#5264AE;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+.name:focus ~ .bar:before, .name:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+.name:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+#main .submit{
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 91.5%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 40px;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 2.5px solid #000;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #000;
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .35s;
+}
+
+#main .submit:hover{
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+#main .submit span{
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s;
+}
+
+#main .submit.is_active{
+  width: 40px;
+  height: 40px;
+}
+
+#main .submit.is_active span{
+  opacity: 0;
+  visibility: hidden;
+}
+
+#main .content{
+	width: 50rem;
+	height: 10rem;
+	resize: none;
+	border-color: #000000;
+	border-width: 2px;
+	font-size: 15px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+#main .content::placeholder {
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+}

@@ -1,0 +1,125 @@
+body{
+	background-image: url(../../images/wa.png);
+	background-size: cover;
+}
+.menu{
+	list-style: none;
+	height: 90px;
+	/*padding: 5px 5px;*/
+	margin: 0;
+	background: rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.menu li{
+	float: left;
+	position: relative;
+	margin: 30px 20px 50px 50px;
+	padding: 0 30px;
+}
+.menu li a{
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 7px 8px;
+	margin: 0;
+	color: rgba(255, 255, 255, 0.8);
+	margin: 0;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.menu li:hover >a{
+	color: white;
+}
+.menu .logo img{
+	border-radius: 100%;
+	display:block;
+	width: 50px;
+	height: 50px;
+	margin-top: -15px;
+	margin-left: 60px;
+}
+.menu .last{
+	margin-right: 125px;
+}
+.menu .logo img{
+	border-radius: 100%;
+	display:block;
+	width: 50px;
+	height: 50px;
+}
+#wrapper{
+	max-width: 68rem;
+	margin: 3rem auto;
+}
+#main h1{
+	font-size:30px;
+	color:black;
+	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;/*google fonts*/
+	margin-bottom: 1.7rem;
+}
+#main h1:after{
+	content: "";
+	display: block;
+	width: 300px;
+	margin-top: 5px;;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+#main div{
+	font-size:1.5rem;
+	color:rgba(0, 0, 0, 0.7);
+	font-weight: 500;
+	font-family: 'Source Sans Pro', sans-serif;/*google fonts*/
+	line-height: 2.2rem;
+	margin-bottom: 3rem;
+}
+#footer{
+	text-align: center;
+	color:rgba(0, 0, 0, 0.5);
+	font-weight: 200;
+	padding-bottom: 3rem;
+	font-size: 0.8rem;
+}
+#footer a{
+	color:rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+}
+#footer:before{
+	content:'';
+	display: block;
+	margin: 2rem auto;
+	width: 40rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+@media(max-width: 480px){
+	#main .thumbnails {
+	display: block;
+	}
+}
+#footer ul.icons li{
+	display: inline-block;
+	border-radius: 100%;
+	border:1px solid rgba(0, 0, 0, 0.25);
+	background-color: rgba(0, 0, 0, 0.05);
+	width: 1.5rem;
+	height: 1.5rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-right:1rem;
+	margin-top: 1rem;
+}
+#footer ul.icons li:hover{
+	border:1px solid rgba(0, 0, 0, 0.25);
+	background-color: rgba(255, 255, 255, 0.3);
+}
+#footer ul.icons li a{
+	color: rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+}
+#footer ul.icons li .label{
+	display: none;
+}
