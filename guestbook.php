@@ -2,7 +2,7 @@
 $conn = mysqli_connect(
   'localhost',
   'root',
-  'moon5354',
+  '****',
   'opentutorials');
 
   $sql = "SELECT * FROM guest ORDER BY created DESC";
