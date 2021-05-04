@@ -13,6 +13,6 @@ Design with CSS3
 * Including greeting message from Professor and Club president
 
 ### Guestbook page   
-*Including comment of all the guests who are enjoying Exhibition   
+* Including comment of all the guests who are enjoying Exhibition   
 Implemented dynamic web page using PHP, used MySQL to store data in database   
 
