@@ -1,4 +1,4 @@
-# Online photo Exhibition
+# Online Photo Exhibition
 
 ### Home page   
 Including exhibition information, Menu bar and SNS link     
